@@ -1,0 +1,16 @@
+geometry.prob_lo     =  -1.8514065526075864e24 -1.8514065526075864e24 -1.8514065526075864e24
+geometry.prob_hi     =   1.8514065526075864e24  1.8514065526075864e24  1.8514065526075864e24
+geometry.is_periodic =   0    0    0
+
+amr.v               = 1
+amr.n_cell          = 256 256 256
+amr.max_level       = 8
+amr.blocking_factor = 32
+amr.max_grid_size   = 128
+amr.n_error_buf     = 0	    # buggy?
+amr.grid_eff        = 0.7
+
+agora_galaxy.refine_Rmax_kpc = 16.0 # kpc
+agora_galaxy.refine_zmax_kpc = 4.0  # kpc
+
+disk_galaxy_grid.gridfile = buf0.grids
