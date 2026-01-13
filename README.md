@@ -11,3 +11,6 @@ make -j
 python3 plot_grids.py buf0.grids --inputs input.buf0 --output buf0.png --units kpc
 python3 plot_grids.py buf3.grids --inputs input.buf3 --output buf3.png --units kpc
 ```
+
+The problem is caused by this line:
+https://github.com/AMReX-Codes/amrex/blob/8ae62c47e1d6660cb1a3926b9c2de4795b3d3c13/Src/AmrCore/AMReX_AmrMesh.cpp#L1013
