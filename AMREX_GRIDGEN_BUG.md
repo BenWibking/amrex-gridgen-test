@@ -53,3 +53,9 @@ the refined region matches the target cylinder (R < 16 kpc, |z| < 4 kpc).
 
 ## Notes
 - The local `amrex/` checkout already contains the iteration-count change.
+- Runtime flags:
+  - `amr.dynamic_grid_iterations = 1` enables the dynamic convergence loop
+    (cycle detection + 50-iteration fail-safe). Default is the original fixed
+    4-iteration path for backward compatibility.
+  - `amr.debug_grid_iterations = 1` prints the iteration count and the reason
+    the iteration loop stopped.
