@@ -9,8 +9,7 @@ amr.blocking_factor = 32
 amr.max_grid_size   = 128
 amr.n_error_buf     = 0	    # buggy?
 amr.grid_eff        = 0.7
-amr.dynamic_grid_iterations = 1
-amr.debug_grid_iterations = 1
+amr.max_grid_iterations = 8
 
 agora_galaxy.refine_Rmax_kpc = 16.0 # kpc
 agora_galaxy.refine_zmax_kpc = 4.0  # kpc
