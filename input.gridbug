@@ -1,0 +1,29 @@
+# ***********************************************************************
+# Problem size and geometry
+# ***********************************************************************
+# Box size is [-600 kpc, 600 kpc]^3
+geometry.prob_lo     =  -1.8514065526075864e24 -1.8514065526075864e24 -1.8514065526075864e24
+geometry.prob_hi     =   1.8514065526075864e24  1.8514065526075864e24  1.8514065526075864e24
+geometry.is_periodic =   0    0    0
+
+# ***********************************************************************
+# VERBOSITY
+# ***********************************************************************
+amr.v               = 1       # verbosity in Amr
+
+# ***********************************************************************
+# Resolution and refinement
+# ***********************************************************************
+amr.n_cell          = 128 128 128
+amr.max_level       = 11      # max lev=10 at 10 pc
+amr.max_grid_iterations = 12  # REQUIRED for generating nested grids
+amr.blocking_factor = 32
+amr.max_grid_size   = 128
+amr.n_error_buf     = 3       # REQUIRED for correct grid generation
+amr.grid_eff        = 0.7
+regrid_interval     = -1      # static refinement only (do not regrid)
+
+agora_galaxy.refine_Rmax_kpc = 16.0 # kpc
+agora_galaxy.refine_zmax_kpc = 4.0  # kpc
+
+disk_galaxy_grid.gridfile = gridbug.grids
